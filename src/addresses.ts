@@ -49,7 +49,7 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
 // Shimmer Testnet addresses
 const SHIMMER_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xbA29C7387d308d1A0788d9F624143bB20B44705c',
-  multicallAddress: '0x9c30A451532fbe8714A0604b95b462eD75790d51',
+  multicallAddress: '0x13186CAA64E21f9BA3aEe508472FCC318137c3B6',
   quoterAddress: '0xf0E0A7d4c7166bFfBeBE86A45042361D516Aa0aA',
   v3MigratorAddress: '0x267FF9e25909A9ba4c42c8AFF900491cF4Bc7CE3',
   nonfungiblePositionManagerAddress: '0x46AD6Cb230719fa7EBd76C23e0C37D75C489F4F0',
