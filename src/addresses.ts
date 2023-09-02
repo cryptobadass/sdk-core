@@ -45,6 +45,18 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0xA5644E29708357803b5A882D272c41cC0dF92B34',
   nonfungiblePositionManagerAddress: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88'
 }
+
+// Shimmer Testnet addresses
+const SHIMMER_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xbA29C7387d308d1A0788d9F624143bB20B44705c',
+  multicallAddress: '0x9c30A451532fbe8714A0604b95b462eD75790d51',
+  quoterAddress: '0xf0E0A7d4c7166bFfBeBE86A45042361D516Aa0aA',
+  v3MigratorAddress: '0x267FF9e25909A9ba4c42c8AFF900491cF4Bc7CE3',
+  nonfungiblePositionManagerAddress: '0x46AD6Cb230719fa7EBd76C23e0C37D75C489F4F0',
+  tickLensAddress: '0xab8785b429d9EE8fE32AE75A3c14415D08e7658b',
+  swapRouter02Address: '0x584067f6Dcf0459B88bfAdBa35AB3B324d5C6Ca5'
+}
+
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
   v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
@@ -160,7 +172,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
-  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES
+  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
+  [ChainId.SHIMMER_TESTNET]: SHIMMER_TESTNET_ADDRESSES
 }
 
 /* V3 Contract Addresses */
