@@ -115,14 +115,14 @@ const ARBITRUM_GOERLI_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0xb52429333da969a0C79a60930a4Bf0020E5D1DE8'
 }
 
-// sepolia v3 addresses
+// sepolia v2 addresses - Tangleswap
 const SEPOLIA_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x0227628f3F023bb0B980b67D528571c95c6DaC1c',
-  multicallAddress: '0xD7F33bCdb21b359c8ee6F0251d30E94832baAd07',
-  quoterAddress: '0xEd1f6473345F45b75F8179591dd5bA1888cf2FB3',
-  v3MigratorAddress: '0x729004182cF005CEC8Bd85df140094b6aCbe8b15',
-  nonfungiblePositionManagerAddress: '0x1238536071E1c677A632429e3655c799b22cDA52',
-  tickLensAddress: '0xd7f33bcdb21b359c8ee6f0251d30e94832baad07'
+  v3CoreFactoryAddress: '0xDe6d750Ce54c0CF6E33b1766772C616a6832f985',
+  multicallAddress: '0x287CAd71012202Ed16cf49cBd0DC219F586fa3DD',
+  quoterAddress: '0x3Ca33E83aC7009b8C3D2fb1b3230909e374EAb92',
+  v3MigratorAddress: '0x45b2b79Ab919Ae3E7e43cB029c7BBF034d4183cf',
+  nonfungiblePositionManagerAddress: '0x124495A667597ef2e2D3c012B043b46078850c10',
+  tickLensAddress: '0x1e8999f2e99D14355b264b199a50F706Ae8F92B6'
 }
 
 // Avalanche v3 addresses
