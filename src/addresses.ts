@@ -57,6 +57,17 @@ const SHIMMER_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x584067f6Dcf0459B88bfAdBa35AB3B324d5C6Ca5'
 }
 
+// Cardano Testnet addresses
+const CARDANO_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x426ADEe4B68eFe95f3dEF9bF45c6A3F1757F77d1',
+  multicallAddress: '0x4dd0B932334bfaF84815035e17ebE94bFeCC3905',
+  quoterAddress: '0xa1E7012E57FD3cf1683Eff089Fad54f84ea97F71',
+  v3MigratorAddress: '0x61D71ade8EA62D0A7Dd4055E22bEAA0feAee6984',
+  nonfungiblePositionManagerAddress: '0x7390DC2cb9bdD035EA9350871335Ffe640583451',
+  tickLensAddress: '0xf74885dF4272524B8Fd85E6ae32a4773Fc0E9580',
+  swapRouter02Address: '0x11dF34397A4d2bf48406601ed46d9B2298db9d79'
+}
+
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
   v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
@@ -173,7 +184,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
-  [ChainId.SHIMMER_TESTNET]: SHIMMER_TESTNET_ADDRESSES
+  [ChainId.SHIMMER_TESTNET]: SHIMMER_TESTNET_ADDRESSES,
+  [ChainId.CARDANO_TESTNET]: CARDANO_TESTNET_ADDRESSES
 }
 
 /* V3 Contract Addresses */
@@ -274,7 +286,7 @@ export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = SUPPORTED_CHAINS.redu
 }, {})
 
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
-  if (chainId == ChainId.BNB || chainId == ChainId.SHIMMER_TESTNET) {
+  if (chainId == ChainId.BNB || chainId == ChainId.SHIMMER_TESTNET || chainId == ChainId.CARDANO_TESTNET) {
     return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address
   }
   return '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45'
