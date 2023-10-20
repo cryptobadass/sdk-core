@@ -70,13 +70,13 @@ const SHIMMER_ADDRESSES: ChainAddresses = {
 
 // Cardano Testnet addresses
 const CARDANO_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x426ADEe4B68eFe95f3dEF9bF45c6A3F1757F77d1',
-  multicallAddress: '0x4dd0B932334bfaF84815035e17ebE94bFeCC3905',
-  quoterAddress: '0xa1E7012E57FD3cf1683Eff089Fad54f84ea97F71',
-  v3MigratorAddress: '0x61D71ade8EA62D0A7Dd4055E22bEAA0feAee6984',
-  nonfungiblePositionManagerAddress: '0x7390DC2cb9bdD035EA9350871335Ffe640583451',
-  tickLensAddress: '0xf74885dF4272524B8Fd85E6ae32a4773Fc0E9580',
-  swapRouter02Address: '0x11dF34397A4d2bf48406601ed46d9B2298db9d79'
+  v3CoreFactoryAddress: '0x382C779E6140F2BF02DD9a139d77e6d18D478813',
+  multicallAddress: '0x80E571c1139457B5C00b5d974776b6bFb29E771f',
+  quoterAddress: '0x9b8555523E2986A22983126041adD8c93b255E11',
+  v3MigratorAddress: '0x6F03fc5f471B835f33857764881a1be650104d5C',
+  nonfungiblePositionManagerAddress: '0xf8e17A8641BD76F6780e26D7d18f7De138307146',
+  tickLensAddress: '0x416a91Ec98e7f0bbE493ebFCBd18E08BeE5Bdc16',
+  swapRouter02Address: '0x37AccA585D9829b0730740e99c3dd318c254F623'
 }
 
 const MAINNET_ADDRESSES: ChainAddresses = {
