@@ -48,13 +48,13 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
 
 // Shimmer Testnet addresses
 const SHIMMER_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xbA29C7387d308d1A0788d9F624143bB20B44705c',
-  multicallAddress: '0x13186CAA64E21f9BA3aEe508472FCC318137c3B6',
-  quoterAddress: '0x9c30A451532fbe8714A0604b95b462eD75790d51',
-  v3MigratorAddress: '0x267FF9e25909A9ba4c42c8AFF900491cF4Bc7CE3',
-  nonfungiblePositionManagerAddress: '0x46AD6Cb230719fa7EBd76C23e0C37D75C489F4F0',
-  tickLensAddress: '0xab8785b429d9EE8fE32AE75A3c14415D08e7658b',
-  swapRouter02Address: '0x584067f6Dcf0459B88bfAdBa35AB3B324d5C6Ca5'
+  v3CoreFactoryAddress: '0xb6Abb4008620b5EfBA6266Cdad2440204f0649b4',
+  multicallAddress: '0x2D346296466ae6bf8198Ef70871fAA1dc6147226', // TangleswapInterfaceMulticall
+  quoterAddress: '0xB6641aaEBc33d9B3732EbA08E1dd2515501a9B3A', // QuoterV2
+  v3MigratorAddress: '0x00a0F8570739ae373488B41eEeD414E79DfCC586',
+  nonfungiblePositionManagerAddress: '0x2A107517df3aE2f5722043EA33b34d294E0FE0CE',
+  tickLensAddress: '0x18a6752Fa58Ea77BBfBB13AEd9993F77b465205f',
+  swapRouter02Address: '0x3914C67Eb60B284C0c688760F210fFC06e039F34'
 }
 
 // Shimmer addresses
