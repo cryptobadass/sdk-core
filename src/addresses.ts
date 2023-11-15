@@ -68,15 +68,15 @@ const SHIMMER_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x1372C03B0c542017a256473706BA6121F8263980'
 }
 
-// Cardano Testnet addresses
+// Cardano Testnet addresses - V3
 const CARDANO_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x382C779E6140F2BF02DD9a139d77e6d18D478813',
-  multicallAddress: '0x80E571c1139457B5C00b5d974776b6bFb29E771f',
-  quoterAddress: '0x9b8555523E2986A22983126041adD8c93b255E11',
-  v3MigratorAddress: '0x6F03fc5f471B835f33857764881a1be650104d5C',
-  nonfungiblePositionManagerAddress: '0xf8e17A8641BD76F6780e26D7d18f7De138307146',
-  tickLensAddress: '0x416a91Ec98e7f0bbE493ebFCBd18E08BeE5Bdc16',
-  swapRouter02Address: '0x37AccA585D9829b0730740e99c3dd318c254F623'
+  v3CoreFactoryAddress: '0x1a5C252Ef37f27385191f0a3BE729964cd64aCF4',
+  multicallAddress: '0xe71076fc0ecA81B8d7837Cf874CDbF8226eE3041', // TangleswapInterfaceMulticall
+  quoterAddress: '0x1d3Af533aaC175416cAa1EfFF4B689048706c6ad',    // QuoterV2
+  v3MigratorAddress: '0xF2cc111BFb95BAB16611023bbA7D227Dea606930',
+  nonfungiblePositionManagerAddress: '0xd4C9950Fc216717158AD552B08d3DbB25505802f',
+  tickLensAddress: '0x1b0660F4757E479364F955C74eB468897FB90dEF',
+  swapRouter02Address: '0xd49b99eF6860Ee35c721F639D3E4a18Ae70ca02c'
 }
 
 const MAINNET_ADDRESSES: ChainAddresses = {
