@@ -72,7 +72,7 @@ const SHIMMER_ADDRESSES: ChainAddresses = {
 const CARDANO_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x1a5C252Ef37f27385191f0a3BE729964cd64aCF4',
   multicallAddress: '0xe71076fc0ecA81B8d7837Cf874CDbF8226eE3041', // TangleswapInterfaceMulticall
-  quoterAddress: '0x1d3Af533aaC175416cAa1EfFF4B689048706c6ad',    // QuoterV2
+  quoterAddress: '0x1d3Af533aaC175416cAa1EfFF4B689048706c6ad', // QuoterV2
   v3MigratorAddress: '0xF2cc111BFb95BAB16611023bbA7D227Dea606930',
   nonfungiblePositionManagerAddress: '0xd4C9950Fc216717158AD552B08d3DbB25505802f',
   tickLensAddress: '0x1b0660F4757E479364F955C74eB468897FB90dEF',
