@@ -79,6 +79,17 @@ const CARDANO_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xd49b99eF6860Ee35c721F639D3E4a18Ae70ca02c'
 }
 
+// Cardano Milkomeda C1 addresses - V1
+const CARDANO_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xda2f048C128506e720b0b0b32F20432157dde1c7',
+  multicallAddress: '0x7475A555ffE8A6036BEeEa5541055d96c92a14Db', // TangleswapInterfaceMulticall
+  quoterAddress: '0x578cC844Ea07C75e8186714096FaB23aA419B575', // QuoterV2
+  v3MigratorAddress: '0xbDdbea66383f6A8879701d22B8b45F887123736A',
+  nonfungiblePositionManagerAddress: '0x11482237baB3918D21Df2cDBDa6E73Cbef486eaC',
+  tickLensAddress: '0xFedfee329f1f4343f7Ae97e8B915dE00d310e30b',
+  swapRouter02Address: '0xF8b8ceEBcc675aE1B6087A308Ac013bf2D96FD6d'
+}
+
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
   v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
@@ -197,7 +208,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.SHIMMER_TESTNET]: SHIMMER_TESTNET_ADDRESSES,
   [ChainId.CARDANO_TESTNET]: CARDANO_TESTNET_ADDRESSES,
-  [ChainId.SHIMMER]: SHIMMER_ADDRESSES
+  [ChainId.SHIMMER]: SHIMMER_ADDRESSES,
+  [ChainId.CARDANO]: CARDANO_ADDRESSES
 }
 
 /* V3 Contract Addresses */
@@ -302,7 +314,8 @@ export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
     chainId == ChainId.BNB ||
     chainId == ChainId.SHIMMER_TESTNET ||
     chainId == ChainId.CARDANO_TESTNET ||
-    chainId == ChainId.SHIMMER
+    chainId == ChainId.SHIMMER ||
+    chainId == ChainId.CARDANO
   ) {
     return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address
   }
