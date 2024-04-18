@@ -19,7 +19,8 @@ export enum ChainId {
   SHIMMER_TESTNET = 1073,
   CARDANO_TESTNET = 200101,
   SHIMMER = 148,
-  CARDANO = 2001
+  CARDANO = 2001,
+  IOTA = 8822
 }
 
 export const SUPPORTED_CHAINS = [
@@ -41,7 +42,8 @@ export const SUPPORTED_CHAINS = [
   ChainId.SHIMMER_TESTNET,
   ChainId.CARDANO_TESTNET,
   ChainId.SHIMMER,
-  ChainId.CARDANO
+  ChainId.CARDANO,
+  ChainId.IOTA
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
 
@@ -55,5 +57,6 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   SHIMMER = 'SMR',
-  CARDANO = 'ADA'
+  CARDANO = 'ADA',
+  IOTA = 'IOTA'
 }

@@ -90,6 +90,17 @@ const CARDANO_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xF8b8ceEBcc675aE1B6087A308Ac013bf2D96FD6d'
 }
 
+// IOTA addresses - V1
+const IOTA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xdf7bA717FB0D5ce579252f05167cD96d0fA77bCb',
+  multicallAddress: '0xaa59d8B8cdBCEE28bF04c543bB583005f7B04A2c', // TangleswapInterfaceMulticall
+  quoterAddress: '0xF8b8ceEBcc675aE1B6087A308Ac013bf2D96FD6d', // QuoterV2
+  v3MigratorAddress: '0x6085C822B7A4c688D114468B1380a0Ed1873a0B3',
+  nonfungiblePositionManagerAddress: '0xbDdbea66383f6A8879701d22B8b45F887123736A',
+  tickLensAddress: '0x46112a684d0cFd5Fdb58212b5605833727667def',
+  swapRouter02Address: '0x1372C03B0c542017a256473706BA6121F8263980'
+}
+
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
   v1MixedRouteQuoterAddress: '0x84E44095eeBfEC7793Cd7d5b57B7e401D7f1cA2E'
@@ -209,7 +220,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SHIMMER_TESTNET]: SHIMMER_TESTNET_ADDRESSES,
   [ChainId.CARDANO_TESTNET]: CARDANO_TESTNET_ADDRESSES,
   [ChainId.SHIMMER]: SHIMMER_ADDRESSES,
-  [ChainId.CARDANO]: CARDANO_ADDRESSES
+  [ChainId.CARDANO]: CARDANO_ADDRESSES,
+  [ChainId.IOTA]: IOTA_ADDRESSES
 }
 
 /* V3 Contract Addresses */
@@ -315,7 +327,8 @@ export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
     chainId == ChainId.SHIMMER_TESTNET ||
     chainId == ChainId.CARDANO_TESTNET ||
     chainId == ChainId.SHIMMER ||
-    chainId == ChainId.CARDANO
+    chainId == ChainId.CARDANO ||
+    chainId == ChainId.IOTA
   ) {
     return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address
   }
